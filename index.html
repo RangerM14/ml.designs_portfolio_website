@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="nav" class="overlay">
+
+                    <div class="logo" onclick="toggleNav()">
+                        <img src="assets/logo.svg.svg" alt="">
+                    </div>
+                        <script>
+                            function toggleNav() {
+                            let nav = document.getElementById("nav");
+
+                            if (nav.style.height === "100%") {
+                                nav.style.height = "0%";
+                            } else {
+                                nav.style.height = "100%";
+                            }
+                            }
+                        </script>
+
+
+                    <div class="overlay-content">
+                        <a href="index.html">Works</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+    
+</body>
+</html>
