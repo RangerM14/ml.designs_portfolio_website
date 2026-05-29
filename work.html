@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/562b9b77d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav" class="overlay">
+
+        <div class="logo" onclick="toggleNav()">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.38 36.36">
+                <polygon class="cls-1" points="37.98 24.97 37.98 33.06 30.44 33.06 31.26 32.19 33.5 29.78 33.5 29.78 37.98 24.97"/>
+                <polygon class="cls-1" points="54.38 29.8 54.38 36.36 41.26 36.36 41.26 21.45 47.82 14.42 47.82 29.8 54.38 29.8"/>
+                <polygon class="cls-1" points="47.82 0 47.82 9.61 41.26 16.64 37.98 20.16 37.98 20.17 35.74 22.57 31.26 27.38 31.26 27.38 31.26 27.38 29.02 29.78 29.01 29.78 29.01 29.79 25.95 33.06 22.88 36.36 13.91 36.36 16.99 33.06 20.05 29.78 24.53 24.97 26.77 22.57 26.77 22.56 24.52 20.15 24.1 19.7 8.56 36.36 -.41 36.36 19.61 14.89 24.09 10.08 24.52 10.54 28.58 14.89 29 15.34 31.25 17.75 31.26 17.76 37.98 10.55 41.26 7.03 47.82 0"/>
+            </svg>
+         </div>
+        <script>
+            function toggleNav() {
+            let nav = document.getElementById("nav");
+
+            if (nav.style.height === "100%") {
+                nav.style.height = "0%";
+            } else {
+                nav.style.height = "100%";
+            }
+            }
+        </script>
+
+        <div class="nav">
+            <ul class="left-nav">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>            
+            </ul>
+            <ul class="right-nav">
+                <li><a href="work.html">Work</a>
+                    <ul class="work-sub-list">
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="archive.html">Archive</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="nav-slider">
+            <a href="#" class="previous">Previous</a>
+             · 
+            <a href="#" class="next">Next</a>
+        </div>
+
+        <div class="work-gallery">
+            <article class="projects">
+                <h2>Projects</h2>
+            </article>
+            <article class="projects">
+                <h2>Projects</h2>
+            </article>  
+            <article class="projects">
+                <h2>Projects</h2>
+            </article> 
+            <article class="projects">
+                <h2>Projects</h2>
+            </article>                              
+        </div>
+    </div>
+
+
+    
+
+    <div class="socials-footer">
+        <a class="social-links" href="https://www.behance.net/michaellester8" target="blank">
+        <i class="fa-brands fa-square-behance fa-2x"></i>
+        </a>
+        <a class="social-links" href="https://www.linkedin.com/in/michael-lester-b656b5346/" target="blank">
+        <i class="fa-brands fa-square-linkedin fa-2x"></i>
+        </a>
+        <a class="social-links" href="https://www.instagram.com/ml.d3signs/" target="blank"> 
+        <i class="fa-brands fa-square-instagram fa-2x"></i>
+        </a>
+    </div>    
+</body>
+</html>
