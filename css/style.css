@@ -100,6 +100,7 @@ a{
     margin-left:auto;
     margin-right:auto;
     margin-top:120px;
+    margin-bottom:120px;
 }
 
 .socials-footer{
@@ -127,19 +128,26 @@ a{
 }
 
 .work-gallery{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    flex:2;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
     margin-top:50px;
     width:100%;
 }
 
-.projects{
-    display:flex;
-    flex-direction:column;
-    height:auto;
-    width:100%;
+.project-type-projects{
+    grid-column: 1/ span 2; 
     background-color:lightgray;
-    margin:5px;
+    height:554.7px;
+
+}
+
+.project-type-photography{
+    aspect-ratio: 1/1; 
+    background-color:lightgray;
+}
+
+.project-type-archive{
+    aspect-ratio: 1/1; 
+    background-color:lightgray;
 }
